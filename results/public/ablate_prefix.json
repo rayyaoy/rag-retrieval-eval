@@ -1,0 +1,106 @@
+{
+ "run_at": "2026-10-04 16:31:16",
+ "metrics": {
+  "with_prefix": {
+   "ALL": {
+    "n": 77,
+    "recall@5": 0.661,
+    "hit@5": 0.688,
+    "mrr@10": 0.488,
+    "recall@5_ceiling": 1.0
+   },
+   "crosslingual": {
+    "n": 25,
+    "recall@5": 0.417,
+    "hit@5": 0.48,
+    "mrr@10": 0.376,
+    "recall@5_ceiling": 1.0
+   },
+   "terminology": {
+    "n": 18,
+    "recall@5": 1.0,
+    "hit@5": 1.0,
+    "mrr@10": 0.773,
+    "recall@5_ceiling": 1.0
+   },
+   "number_source": {
+    "n": 18,
+    "recall@5": 0.722,
+    "hit@5": 0.722,
+    "mrr@10": 0.569,
+    "recall@5_ceiling": 1.0
+   },
+   "stale": {
+    "n": 16,
+    "recall@5": 0.594,
+    "hit@5": 0.625,
+    "mrr@10": 0.253,
+    "recall@5_ceiling": 1.0
+   }
+  },
+  "no_prefix": {
+   "ALL": {
+    "n": 77,
+    "recall@5": 0.517,
+    "hit@5": 0.545,
+    "mrr@10": 0.399,
+    "recall@5_ceiling": 1.0
+   },
+   "crosslingual": {
+    "n": 25,
+    "recall@5": 0.293,
+    "hit@5": 0.36,
+    "mrr@10": 0.246,
+    "recall@5_ceiling": 1.0
+   },
+   "terminology": {
+    "n": 18,
+    "recall@5": 0.944,
+    "hit@5": 0.944,
+    "mrr@10": 0.738,
+    "recall@5_ceiling": 1.0
+   },
+   "number_source": {
+    "n": 18,
+    "recall@5": 0.667,
+    "hit@5": 0.667,
+    "mrr@10": 0.501,
+    "recall@5_ceiling": 1.0
+   },
+   "stale": {
+    "n": 16,
+    "recall@5": 0.219,
+    "hit@5": 0.25,
+    "mrr@10": 0.14,
+    "recall@5_ceiling": 1.0
+   }
+  }
+ },
+ "delta_recall5": 0.144,
+ "boot95": [
+  0.071,
+  0.226
+ ],
+ "by_type_delta": {
+  "crosslingual": 0.124,
+  "terminology": 0.056,
+  "number_source": 0.055,
+  "stale": 0.375
+ },
+ "stale": {
+  "with_prefix": {
+   "n": 16,
+   "stale_top1": 0.25,
+   "stale_in_top5": 0.125,
+   "first_is_stale": 0.625,
+   "current_found@5": 0.625
+  },
+  "no_prefix": {
+   "n": 16,
+   "stale_top1": 0.25,
+   "stale_in_top5": 0.087,
+   "first_is_stale": 0.688,
+   "current_found@5": 0.25
+  }
+ }
+}

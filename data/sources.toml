@@ -1,0 +1,175 @@
+# 公开语料来源（全部钉死版本，保证可复现）
+#
+# EDGAR：美国联邦政府作品，公共领域。只取 10-K 的 Item 1 至 Item 7A（业务、风险因素、
+#        网络安全、物业、诉讼、股票市场、管理层讨论与分析、市场风险），不取财务报表正文。
+# 维基：中文维基百科，CC BY-SA 4.0。按 revision id 钉死版本，用 zh-cn 字词转换渲染。
+#        正文不入库，由 fetch_wiki.py 下载；署名见 NOTICE。
+
+[[edgar]]
+doc_id = "edgar-nvda-fy2024"
+company = "NVIDIA"
+fiscal_year = "FY2024"
+period_end = "2024-01-28"
+cik = 1045810
+accession = "0001045810-24-000029"
+document = "nvda-20240128.htm"
+
+[[edgar]]
+doc_id = "edgar-nvda-fy2025"
+company = "NVIDIA"
+fiscal_year = "FY2025"
+period_end = "2025-01-26"
+cik = 1045810
+accession = "0001045810-25-000023"
+document = "nvda-20250126.htm"
+
+[[edgar]]
+doc_id = "edgar-mu-fy2024"
+company = "Micron"
+fiscal_year = "FY2024"
+period_end = "2024-08-29"
+cik = 723125
+accession = "0000723125-24-000027"
+document = "mu-20240829.htm"
+
+[[edgar]]
+doc_id = "edgar-mu-fy2025"
+company = "Micron"
+fiscal_year = "FY2025"
+period_end = "2025-08-28"
+cik = 723125
+accession = "0000723125-25-000028"
+document = "mu-20250828.htm"
+
+[[edgar]]
+doc_id = "edgar-aapl-fy2023"
+company = "Apple"
+fiscal_year = "FY2023"
+period_end = "2023-09-30"
+cik = 320193
+accession = "0000320193-23-000106"
+document = "aapl-20230930.htm"
+
+[[edgar]]
+doc_id = "edgar-aapl-fy2024"
+company = "Apple"
+fiscal_year = "FY2024"
+period_end = "2024-09-28"
+cik = 320193
+accession = "0000320193-24-000123"
+document = "aapl-20240928.htm"
+
+# 中文维基条目：title 是维基上的规范标题，revid 钉死版本。
+[[wiki]]
+doc_id = "zhwiki-nvidia"
+title = "英伟达"
+label = "英伟达"          # zh-cn 显示名，用作段落前缀
+revid = 92989890
+
+[[wiki]]
+doc_id = "zhwiki-micron"
+title = "美光科技"
+label = "美光科技"          # zh-cn 显示名，用作段落前缀
+revid = 93484263
+
+[[wiki]]
+doc_id = "zhwiki-apple"
+title = "蘋果公司"
+label = "苹果公司"          # zh-cn 显示名，用作段落前缀
+revid = 94711105
+
+[[wiki]]
+doc_id = "zhwiki-gpu"
+title = "圖形處理器"
+label = "图形处理器"          # zh-cn 显示名，用作段落前缀
+revid = 94660692
+
+[[wiki]]
+doc_id = "zhwiki-cuda"
+title = "CUDA"
+label = "CUDA"          # zh-cn 显示名，用作段落前缀
+revid = 93439270
+
+[[wiki]]
+doc_id = "zhwiki-dram"
+title = "动态随机存储器"
+label = "动态随机存储器"          # zh-cn 显示名，用作段落前缀
+revid = 94685218
+
+[[wiki]]
+doc_id = "zhwiki-hbm"
+title = "高頻寬記憶體"
+label = "高带宽存储器"          # zh-cn 显示名，用作段落前缀
+revid = 93939443
+
+[[wiki]]
+doc_id = "zhwiki-flash"
+title = "闪存"
+label = "闪存"          # zh-cn 显示名，用作段落前缀
+revid = 94456980
+
+[[wiki]]
+doc_id = "zhwiki-ssd"
+title = "固态硬盘"
+label = "固态硬盘"          # zh-cn 显示名，用作段落前缀
+revid = 94177351
+
+[[wiki]]
+doc_id = "zhwiki-iphone"
+title = "IPhone"
+label = "iPhone"          # zh-cn 显示名，用作段落前缀
+revid = 94743577
+
+[[wiki]]
+doc_id = "zhwiki-jensen-huang"
+title = "黃仁勳"
+label = "黄仁勋"          # zh-cn 显示名，用作段落前缀
+revid = 94100755
+
+[[wiki]]
+doc_id = "zhwiki-ic"
+title = "集成电路"
+label = "集成电路"          # zh-cn 显示名，用作段落前缀
+revid = 93235388
+
+[[wiki]]
+doc_id = "zhwiki-tsmc"
+title = "台積電"
+label = "台积电"          # zh-cn 显示名，用作段落前缀
+revid = 94702222
+
+[[wiki]]
+doc_id = "zhwiki-datacenter"
+title = "数据中心"
+label = "数据中心"          # zh-cn 显示名，用作段落前缀
+revid = 94198685
+
+[[wiki]]
+doc_id = "zhwiki-apple-silicon"
+title = "Apple晶片"
+label = "Apple芯片"          # zh-cn 显示名，用作段落前缀
+revid = 94512435
+
+[[wiki]]
+doc_id = "zhwiki-foundry"
+title = "晶圓代工"
+label = "晶圆代工"          # zh-cn 显示名，用作段落前缀
+revid = 92028180
+
+[[wiki]]
+doc_id = "zhwiki-tim-cook"
+title = "提姆·庫克"
+label = "蒂姆·库克"          # zh-cn 显示名，用作段落前缀
+revid = 94374018
+
+[[wiki]]
+doc_id = "zhwiki-hopper"
+title = "Hopper (微架构)"
+label = "Hopper (微架构)"          # zh-cn 显示名，用作段落前缀
+revid = 93508936
+
+[[wiki]]
+doc_id = "zhwiki-ddr5"
+title = "DDR5 SDRAM"
+label = "DDR5 SDRAM"          # zh-cn 显示名，用作段落前缀
+revid = 91350672

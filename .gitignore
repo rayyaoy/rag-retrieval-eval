@@ -1,0 +1,9 @@
+# 运行时产物：向量缓存、Qdrant 本地文件
+.work/
+# 下载的原始文件与由它们生成的段落（由 make data 重新生成，不随仓库分发）
+data/raw/
+data/passages.jsonl
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/

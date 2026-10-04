@@ -1,0 +1,34 @@
+{
+ "passages_sha256": {
+  "max900-min20": "5973c8824229aa5235ad53c6916b5ce0847976e73f9e48cb5211dcc52550b937"
+ },
+ "raw_sha256": {
+  "edgar-aapl-fy2023.htm": "dacdd136f6d264e14e9516dd448fee5df40cf9e1d3ae3da046accd9d613adfa2",
+  "edgar-aapl-fy2024.htm": "4ceb7bfa64aabb53ceb3b186d6166de13d3ab32c6cdd2bb2b295371c781df35f",
+  "edgar-mu-fy2024.htm": "1b85a7735ac66457fa09c82a32f6a5dd52a7fa105a6c7d103ccede7b164915ca",
+  "edgar-mu-fy2025.htm": "8da1b11882c7cbaa2feb3436315d1b281c56b87fe690e36fe87098e6f9a3a63f",
+  "edgar-nvda-fy2024.htm": "10bbd7cffd1ad36a1218eed90bec7bb3f61a9f7125158a216a60f32cef1db309",
+  "edgar-nvda-fy2025.htm": "c5779247acc69ac44db25db52b1437ce1ac9f847e7cf7a02af360235e99877b3"
+ },
+ "wiki_sha256_hint": {
+  "zhwiki-apple-silicon.json": "3a03ae1784122df9bf05540dfe11f05823b567cd73ed5de576209a624bfc02b9",
+  "zhwiki-apple.json": "ab9eb4dee2c7c9a6787205946a550339f5130e71acb9753affed70c81d5e8ec8",
+  "zhwiki-cuda.json": "9005644b8a5d21c07fa15bcbb9cf9946573d6b8347e57e4115c6a81d1d002cbb",
+  "zhwiki-datacenter.json": "6b86660700ee273ead64d97f438fd20c6d0afe3c026cd301cdbd61a8b3ba6780",
+  "zhwiki-ddr5.json": "8053f2d4761cd8d71962b88b11dab97653f284b25fb56510c96bd3ac90a9b124",
+  "zhwiki-dram.json": "0fc141320b88dbacd668946019b2ff6619f891832c4571908854c8c63a3b5870",
+  "zhwiki-flash.json": "051e2d1bf344328cd83ea331ab04573aed597ccfc15ef2eaf783c04f95c00b4d",
+  "zhwiki-foundry.json": "8248022ace266a82199fd31e432b7b02e2ae2904498f6b38dae4c37dc9f70265",
+  "zhwiki-gpu.json": "d44a7bf349898c8f832a2b1fc1139c57350d317f70ddd0625f169a3fb999370e",
+  "zhwiki-hbm.json": "25f3c38e65b69d9cc9c43d25903e7334667c2ddef338d809458ac0150f0fa528",
+  "zhwiki-hopper.json": "411d4c82e75deb6796c6a11b1a4a761ce7a36d6b6a0c07a0bdbb7ee9c56efc2c",
+  "zhwiki-ic.json": "e7a9fff7b7936647c82b7aa4e531cd571e40a347f138722f4ebda51874a35dec",
+  "zhwiki-iphone.json": "475f3953761f59ce389611552db712adfcbf0691fff53bf85c61213f1143b2f2",
+  "zhwiki-jensen-huang.json": "9e615055b820428f3b82313c2655d54d2fb2cfb5ac321db23f4994406fd61186",
+  "zhwiki-micron.json": "521be8b1b4071478e18dfe54f4697ce1505eb5e7f5e428251ded2dcfbd808c1e",
+  "zhwiki-nvidia.json": "4f337df06102f1d5ad2683bb64f6952b89a8278d4d86b8849dfc717c59087547",
+  "zhwiki-ssd.json": "936c5c652d27fe8c1d6ec64740c5e9d0f962d23f29f9af1978fd182f8cf3263a",
+  "zhwiki-tim-cook.json": "4a8f1579fe586c0b1eed5ab2386e5f8bf53efe25d0f364e9b96c9a56631b46db",
+  "zhwiki-tsmc.json": "fc81a106300510684d0fc167d1c269c5c4ddd2db7d77575ccfe349f70c9ec39d"
+ }
+}

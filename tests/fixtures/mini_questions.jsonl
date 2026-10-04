@@ -1,0 +1,5 @@
+{"id": "F-01", "type": "crosslingual", "query": "英伟达的晶圆由哪些代工厂生产", "keywords": ["英伟达", "代工厂"], "evidence": [{"doc": "edgar-demo", "text": "to produce our semiconductor wafers"}]}
+{"id": "F-02", "type": "terminology", "query": "DRAM 為什麼需要週期性更新", "keywords": ["DRAM", "更新"], "evidence": [{"doc": "demo-zh", "text": "所以需要周期性刷新"}]}
+{"id": "F-03", "type": "number_source", "query": "38.7 billion 回购额度出自哪里", "keywords": ["38.7 billion", "回购"], "evidence": [{"doc": "edgar-demo", "text": "$38.7 billion of our common stock"}]}
+{"id": "F-04", "type": "number_source", "query": "1,234 名员工", "keywords": ["1,234", "员工"], "evidence": [{"doc": "demo-zh", "text": "1,234 名员工"}]}
+{"id": "F-05", "type": "stale", "query": "NVIDIA employees", "keywords": ["NVIDIA", "employees"], "evidence": [{"doc": "edgar-demo-fy2025", "text": "approximately 36,000 employees"}], "stale_evidence": [{"doc": "edgar-demo-fy2024", "text": "approximately 29,600 employees"}]}

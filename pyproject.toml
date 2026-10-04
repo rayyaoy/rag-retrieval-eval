@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61,<81"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-retrieval-eval"
+version = "0.1.0"
+description = "Retrieval evaluation for a mixed Chinese/English corpus: keyword, BM25, BGE-M3, RRF and reranking, with pre-registered decision rules and paired bootstrap CIs."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Wang Yaoyang" }]
+requires-python = ">=3.11"
+# 下面是本仓库评测实际使用的版本（2026-10）；更新的版本大概率也能跑，但数字未必逐位一致。
+dependencies = [
+    "numpy>=2.0",
+    "jieba==0.42.1",
+    "qdrant-client>=1.12,<2",
+    "torch>=2.4",
+    "sentence-transformers>=3.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["rre"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+filterwarnings = ["ignore::SyntaxWarning", "ignore::DeprecationWarning"]

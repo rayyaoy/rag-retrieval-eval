@@ -1,0 +1,58 @@
+rag-retrieval-eval
+Copyright (c) 2026 Wang Yaoyang
+
+本仓库的代码以 MIT 许可发布（见 LICENSE）。MIT 只覆盖代码与本仓库作者撰写的文字，
+不覆盖下列第三方数据与模型。
+
+------------------------------------------------------------------------
+1. 美国证券交易委员会 EDGAR 10-K 文件
+------------------------------------------------------------------------
+来源：https://www.sec.gov/Archives/edgar/data/（具体文件见 data/sources.toml）
+  NVIDIA Corporation  10-K FY2024 (0001045810-24-000029)、FY2025 (0001045810-25-000023)
+  Micron Technology   10-K FY2024 (0000723125-24-000027)、FY2025 (0000723125-25-000028)
+  Apple Inc.          10-K FY2023 (0000320193-23-000106)、FY2024 (0000320193-24-000123)
+上市公司依法向 SEC 提交的文件属于公开记录，通常视为可自由使用；本仓库不分发全文，
+由 data/fetch_edgar.py 下载。tests/fixtures/mini_passages.jsonl 收录了其中几句原文作测试样例，
+goldset/ 中的证据串是 10-K 原文的短摘录。各公司名称与商标归各自所有者。
+
+------------------------------------------------------------------------
+2. 中文维基百科
+------------------------------------------------------------------------
+条目正文以 Creative Commons Attribution-ShareAlike 4.0（CC BY-SA 4.0）许可发布，
+https://creativecommons.org/licenses/by-sa/4.0/ 。作者为各条目的维基百科贡献者，
+完整作者列表见每个条目的历史页面。本仓库不分发条目正文，由 data/fetch_wiki.py 按下列
+固定版本下载（zh-cn 字词转换渲染，未作其他修改；切段时去掉了信息框、导航框、参考文献等）：
+
+  英伟达            https://zh.wikipedia.org/w/index.php?oldid=92989890
+  美光科技          https://zh.wikipedia.org/w/index.php?oldid=93484263
+  蘋果公司          https://zh.wikipedia.org/w/index.php?oldid=94711105
+  圖形處理器        https://zh.wikipedia.org/w/index.php?oldid=94660692
+  CUDA              https://zh.wikipedia.org/w/index.php?oldid=93439270
+  动态随机存储器    https://zh.wikipedia.org/w/index.php?oldid=94685218
+  高頻寬記憶體      https://zh.wikipedia.org/w/index.php?oldid=93939443
+  闪存              https://zh.wikipedia.org/w/index.php?oldid=94456980
+  固态硬盘          https://zh.wikipedia.org/w/index.php?oldid=94177351
+  IPhone            https://zh.wikipedia.org/w/index.php?oldid=94743577
+  黃仁勳            https://zh.wikipedia.org/w/index.php?oldid=94100755
+  集成电路          https://zh.wikipedia.org/w/index.php?oldid=93235388
+  台積電            https://zh.wikipedia.org/w/index.php?oldid=94702222
+  数据中心          https://zh.wikipedia.org/w/index.php?oldid=94198685
+  Apple晶片         https://zh.wikipedia.org/w/index.php?oldid=94512435
+  晶圓代工          https://zh.wikipedia.org/w/index.php?oldid=92028180
+  提姆·庫克         https://zh.wikipedia.org/w/index.php?oldid=94374018
+  Hopper (微架构)   https://zh.wikipedia.org/w/index.php?oldid=93508936
+  DDR5 SDRAM        https://zh.wikipedia.org/w/index.php?oldid=91350672
+
+goldset/questions.jsonl 与 goldset/goldset.jsonl 的 evidence 字段含上述条目的短摘录
+（每条不超过约 40 字，用于机器核对金标），这些摘录同样适用 CC BY-SA 4.0，署名如上。
+
+------------------------------------------------------------------------
+3. 模型（不随仓库分发，运行时从 Hugging Face 缓存加载）
+------------------------------------------------------------------------
+  BAAI/bge-m3              MIT 许可（模型卡 license: mit，核对的版本 5617a9f61b028005a4858fdac845db406aefb181）
+  BAAI/bge-reranker-v2-m3  Apache License 2.0（模型卡 license: apache-2.0，版本 953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e）
+
+------------------------------------------------------------------------
+4. 测试样例中的中文段落
+------------------------------------------------------------------------
+tests/fixtures/mini_passages.jsonl 里 doc_id 为 demo-zh 的段落由本仓库作者撰写，随代码以 MIT 发布。
